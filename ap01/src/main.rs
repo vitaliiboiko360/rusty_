@@ -6,7 +6,7 @@
 
 use axum::{response::Html, routing::get, Router};
 
-#[tokio::main]
+#[mytest::test]
 async fn main() {
     // build our application with a route
     let app = Router::new().route("/", get(handler));
